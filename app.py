@@ -65,7 +65,7 @@ def admin_login():
         email = request.form['email']
         password = request.form['password']
 
-        if email == 'mahesh@example.com' and password == '123':
+        if email == '*********' and password == '******':
             session['admin'] = True
             return redirect(url_for('admin_dashboard'))
         else:
